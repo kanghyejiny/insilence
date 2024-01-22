@@ -1,0 +1,127 @@
+.hide {
+    @include hide;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1800px;
+    position: relative;
+    width: 100%;
+    padding: 0 $margin-clamp;
+}
+
+.title2,
+.title {
+    font-size: clamp(5.778rem, 10vw, 8.889rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1;
+}
+.text {
+    font-size: clamp(1.333rem, 5vw, 1.778rem);
+    line-height: 1.15;
+    font-weight: 500;
+}
+
+.ic-left,
+.ic-right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    top: 0;
+    &::after,
+    &::before {
+        content: "";
+        border-left: $clamp solid;
+        border-top: $clamp solid;
+        border-top-left-radius: max($clamp, 1px);
+        display: block;
+        width: 7px;
+        height: 7px;
+        transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+}
+
+.ic-left {
+    left: 0;
+    &::before {
+        transform: rotate(0deg) translate(calc($clamp * -1 / 2), calc($clamp * -1 / 2));
+    }
+    &::after {
+        transform: rotate(-90deg) translate(calc($clamp * -1 / 2), calc($clamp * -1 / 2));
+    }
+}
+
+.ic-right {
+    right: 0;
+    &::before {
+        transform: rotate(90deg) translate(calc($clamp * -1 / 2), calc($clamp * -1 / 2));
+    }
+    &::after {
+        transform: rotate(180deg) translate(calc($clamp * -1 / 2), calc($clamp * -1 / 2));
+    }
+}
+
+@keyframes logoAni {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes logoLetter {
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes maskZoom {
+    0% {
+        mask-position: 50% calc(50% - 3.8em);
+        mask-size: 7.8vw auto;
+    }
+    to {
+        mask-position: 50% calc(64.5% - 3.8em);
+        mask-size: 1100vw auto;
+    }
+}
+
+@keyframes letterSpin {
+    0% {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(1turn);
+    }
+}
+
+@keyframes textAni {
+    0% {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes imageIn {
+    0% {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes imageOut {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

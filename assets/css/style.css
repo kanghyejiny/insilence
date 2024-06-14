@@ -18,14 +18,12 @@
 :root {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-       text-size-adjust: 100%;
+  text-size-adjust: 100%;
   cursor: default;
   line-height: 1.5;
   overflow-wrap: break-word;
   -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 html, body {
@@ -45,9 +43,7 @@ button {
   background: none;
   border: 0;
   cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 a {
@@ -163,16 +159,12 @@ html {
 }
 @keyframes maskZoom {
   0% {
-    -webkit-mask-position: 50% calc(50% - 3.8em);
-            mask-position: 50% calc(50% - 3.8em);
-    -webkit-mask-size: 7.8vw auto;
-            mask-size: 7.8vw auto;
+    mask-position: 50% calc(50% - 3.8em);
+    mask-size: 7.8vw auto;
   }
   to {
-    -webkit-mask-position: 50% calc(64.5% - 3.8em);
-            mask-position: 50% calc(64.5% - 3.8em);
-    -webkit-mask-size: 1100vw auto;
-            mask-size: 1100vw auto;
+    mask-position: 50% calc(64.5% - 3.8em);
+    mask-size: 1100vw auto;
   }
 }
 @keyframes letterSpin {
@@ -559,12 +551,9 @@ html {
   display: grid;
   z-index: 1;
   overflow: hidden;
-  -webkit-mask-position: 50% calc(50% - 3.8em);
-          mask-position: 50% calc(50% - 3.8em);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-size: 7.8vw auto;
-          mask-size: 7.8vw auto;
+  mask-position: 50% calc(50% - 3.8em);
+  mask-repeat: no-repeat;
+  mask-size: 7.8vw auto;
   animation: maskZoom 1s 2s cubic-bezier(0.76, 0, 0.24, 1) forwards;
   transform-origin: bottom left;
 }
@@ -599,8 +588,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   visibility: hidden;
 }
 .sc-header .group-images .img {
@@ -616,8 +604,7 @@ html {
 .sc-header .group-images .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .sc-header .container.roll {
   grid-column: 1;
@@ -726,7 +713,6 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  aspect-ratio: 1.6/1;
   overflow: hidden;
   opacity: 0;
 }
@@ -736,8 +722,7 @@ html {
 .sc-introduce .group-introduce .sticky-introduce .bg .video video,
 .sc-introduce .group-introduce .sticky-introduce .bg .img1 img,
 .sc-introduce .group-introduce .sticky-introduce .bg .img1 video {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -928,11 +913,9 @@ html {
   overflow: hidden;
 }
 .sc-contents .group-contents .img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: auto;
-  aspect-ratio: 0.668/1;
 }
 .sc-contents .group-contents .video {
   position: relative;
@@ -942,9 +925,7 @@ html {
 }
 .sc-contents .group-contents .video video {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  aspect-ratio: 0.63/1;
+  object-fit: cover;
 }
 .sc-contents .group-contents svg {
   grid-column: 13/span 6;
@@ -1015,8 +996,7 @@ html {
   height: 100%;
   justify-content: center;
   left: 0;
-  -webkit-mask-image: linear-gradient(180deg, #000 66%, transparent);
-          mask-image: linear-gradient(180deg, #000 66%, transparent);
+  mask-image: linear-gradient(180deg, #000 66%, transparent);
   mix-blend-mode: difference;
   position: absolute;
   top: 0;
@@ -1028,8 +1008,7 @@ html {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
   justify-content: center;
-  -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 40%, #000 100%);
-          mask-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 40%, #000 100%);
+  mask-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 40%, #000 100%);
 }
 .sc-contents .group-letter .letter-area .letter-wrap span {
   font-size: clamp(11.111rem, 33vw, 33.333rem);
@@ -1077,7 +1056,6 @@ html {
   grid-column: 1/14;
   grid-row: 1;
   margin-left: calc(clamp(16px, 4vw, 48px) * -1);
-  aspect-ratio: 0.8/1;
 }
 .sc-mizuno .group-mizuno .img-area:before {
   background: #302e38;
@@ -1087,11 +1065,9 @@ html {
   width: 100%;
 }
 .sc-mizuno .group-mizuno .img-area img {
-  -o-object-position: 0% 0%;
-     object-position: 0% 0%;
+  object-position: 0% 0%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 .sc-mizuno .group-mizuno .squares {
@@ -1145,32 +1121,27 @@ html {
 .sc-video .group-video video {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .sc-video .group-video .video1 {
   grid-column: 1/10;
   grid-row: 1;
   margin-top: min(8.5vw, 120px);
-  aspect-ratio: 1.6/1;
 }
 .sc-video .group-video .video2 {
   grid-column: 18/-1;
   grid-row: 1;
-  aspect-ratio: 0.73/1;
   margin-right: calc(clamp(16px, 4vw, 48px) * -1);
 }
 .sc-video .group-video .img3 {
   grid-column: 12/18;
   grid-row: 1;
   margin-top: min(21vw, 304px);
-  aspect-ratio: 0.56/1;
 }
 .sc-video .group-video .video4 {
   grid-column: 1/12;
   grid-row: 2;
   margin-left: calc(clamp(16px, 4vw, 48px) * -1);
-  aspect-ratio: 2.66/1;
   position: relative;
 }
 .sc-video .group-video .shapes {
@@ -1211,7 +1182,6 @@ html {
   height: 100%;
   grid-row: 1;
   width: 100%;
-  aspect-ratio: 0.86/1;
   position: absolute;
   top: 0;
   left: 0;
@@ -1219,12 +1189,10 @@ html {
   z-index: 1;
 }
 .sc-showcase .group-right .img1 img {
-  -o-object-position: left;
-     object-position: left;
+  object-position: left;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .sc-showcase .group-right .bg {
   grid-column: 1/18;
@@ -1268,7 +1236,6 @@ html {
   grid-column: 1/-2;
   position: relative;
   overflow: hidden;
-  aspect-ratio: 0.67/1;
 }
 .sc-showcase .group-left .left-area .video2 video {
   position: absolute;
@@ -1276,8 +1243,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .sc-showcase .group-left .text {
   grid-column: 12/21;
@@ -1300,14 +1266,12 @@ html {
   grid-column: 1/16;
   grid-row: 1;
   height: auto;
-  aspect-ratio: 1.13/1;
   position: relative;
 }
 .sc-showcase2 .group-showcase2 .video1 video {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .sc-showcase2 .group-showcase2 .video1 .overlay {
   background: #000;
@@ -1417,10 +1381,8 @@ html {
   overflow: hidden;
 }
 .sc-collage .group-collage .img1 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
-  aspect-ratio: 1.50987/1;
 }
 .sc-collage .group-collage .img2 {
   grid-column: 15/25;
@@ -1430,10 +1392,8 @@ html {
   overflow: hidden;
 }
 .sc-collage .group-collage .img2 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
-  aspect-ratio: 0.880669/1;
 }
 .sc-collage .group-collage .img3 {
   grid-column: 9/16;
@@ -1443,10 +1403,8 @@ html {
   overflow: hidden;
 }
 .sc-collage .group-collage .img3 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
-  aspect-ratio: 0.898204/1;
 }
 
 .sc-collection {
@@ -1457,12 +1415,10 @@ html {
 .sc-collection .video {
   height: 100%;
   width: 100%;
-  aspect-ratio: 1.78/1;
 }
 .sc-collection .video video {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 .sc-collection .group-text {
@@ -1583,7 +1539,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 2.1875/1;
 }
 .sc-lookbook .group-lookbook .lookbook-list .lookbook-item.on::after {
   transform: scaleY(1);
@@ -1605,8 +1560,7 @@ html {
   transition: transform 0.65s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .sc-lookbook .group-lookbook .lookbook-list img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: auto;
 }
@@ -1624,8 +1578,7 @@ html {
 .sc-lookbook2 .video video {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .sc-lookbook2 .group-text {
   grid-column: 1/-1;
@@ -1868,11 +1821,9 @@ html {
   border-radius: 3px;
 }
 .sc-recovered .group-recovered .collection-area .collection-list li a .img-wrap img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: auto;
-  aspect-ratio: 1/1;
   transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .sc-recovered .group-recovered .collection-area .collection-list li a .name {
